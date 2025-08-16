@@ -1,0 +1,12 @@
+{
+  "name": "@project/monorepo",
+  "private": "true",
+  "version": "0.0.0",
+  "workspaces": [
+    "client/*",
+    "server/*"
+  ],
+  "dependencies": {
+    "typescript": "latest"
+  }
+}
