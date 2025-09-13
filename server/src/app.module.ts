@@ -3,6 +3,10 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { User } from './users/user.entity';
+import { Project } from './projects/project.entity';
+import { Skill } from './skills/skill.entity';
+import { Edition } from './editions/edition.entity';
+import { Cell } from './cells/cell.entity';
 import { UsersModule } from './users/users.module';
 
 @Module({
@@ -15,7 +19,7 @@ import { UsersModule } from './users/users.module';
       database: 'ptp',
       username: 'admin',
       password: 'admin',
-      entities: [User],
+      entities: [User, Cell, Edition, Project, Skill],
       synchronize: true,
     }),
   ],
